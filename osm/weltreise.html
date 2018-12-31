@@ -11,7 +11,7 @@
     <script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/nc-tracker/markers.js"></script>
 </head>
 <body>
-    <div id="travelmap" style="height: 440px; border: 1px solid #AAA;"></div>
+    <div id="travelmap" style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px;"></div>
     <script>
         var mymap = L.map('travelmap').setView([markers[markers.length-1].lat, markers[markers.length-1].lng], 3);
         L.tileLayer( 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
